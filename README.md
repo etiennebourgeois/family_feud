@@ -1,73 +1,172 @@
-# React + TypeScript + Vite
+# 🎮 Une Famille en Or (Family Feud)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A French-style Family Feud game built with React, TypeScript, and Tailwind CSS. Perfect for parties, family gatherings, and holiday events!
 
-Currently, two official plugins are available:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-19-61dafb.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)
+![Vite](https://img.shields.io/badge/Vite-7-646cff.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Classic Game Board** - Authentic Family Feud style board with flip animations
+- **Two-Team Scoring** - Track points for two competing teams
+- **Strike System** - Visual strike indicators (up to 3 strikes)
+- **Host Controls** - Dedicated host page to control the game flow
+- **Admin Panel** - Create, edit, and manage survey questions
+- **Sound Effects** - Authentic game sounds (correct answers, strikes, victory)
+- **Voice Recording** - Record contestant answers for entertainment
+- **French UI** - Complete French localization
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Quick Start
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm (comes with Node.js)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/family_feud.git
+   cd family_feud
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the app**
+   - Navigate to `http://localhost:5173` in your browser
+
+## 📖 How to Use
+
+### Pages Overview
+
+| Page              | URL      | Description                                       |
+| ----------------- | -------- | ------------------------------------------------- |
+| **Game Board**    | `/`      | Display for audience/contestants (full-screen TV) |
+| **Host Controls** | `/host`  | Control panel for the game host                   |
+| **Admin Panel**   | `/admin` | Manage survey questions                           |
+
+### Recommended Setup
+
+For the best experience, use **two screens**:
+
+1. **Screen 1 (TV/Projector)**: Open the Game Board (`/`) in full-screen mode
+2. **Screen 2 (Laptop/Tablet)**: Open Host Controls (`/host`) to manage the game
+
+### Game Flow
+
+1. **Prepare Questions** - Go to `/admin` and add your survey questions
+2. **Start the Game** - Open `/` on the display and `/host` on your control device
+3. **Select a Question** - Use the host controls to load a question
+4. **Play the Round** - Reveal answers as teams guess correctly
+5. **Award Points** - Click the team button to award round points
+6. **Continue** - Move to the next question and repeat!
+
+## 📝 Adding Questions
+
+### Via Admin Panel
+
+1. Navigate to `/admin`
+2. Fill in the question prompt
+3. Add up to 8 answers with their point values (ranked by popularity)
+4. Click "Ajouter la question"
+5. Export your questions as JSON to save them
+
+### Via JSON Import
+
+You can also import questions from a JSON file. Format:
+
+```json
+[
   {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+    "id": "1",
+    "prompt": "Nommez quelque chose qu'on trouve dans un réfrigérateur",
+    "answers": [
+      { "text": "Lait", "points": 35, "revealed": false },
+      { "text": "Oeufs", "points": 25, "revealed": false },
+      { "text": "Beurre", "points": 15, "revealed": false },
+      { "text": "Fromage", "points": 12, "revealed": false },
+      { "text": "Légumes", "points": 8, "revealed": false },
+      { "text": "Jus", "points": 5, "revealed": false }
+    ]
+  }
+]
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎵 Sound Effects
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The game includes built-in sound effects:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ✅ **Correct Answer** - Ding sound when revealing an answer
+- ❌ **Strike** - Buzzer sound for wrong answers
+- 🎉 **Victory** - Fanfare when a team wins the round
+
+## 🛠️ Available Scripts
+
+| Command           | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start development server |
+| `npm run build`   | Build for production     |
+| `npm run preview` | Preview production build |
+| `npm run lint`    | Run ESLint               |
+
+## 🏗️ Tech Stack
+
+- **React 19** - UI framework
+- **TypeScript** - Type safety
+- **Vite 7** - Build tool
+- **Tailwind CSS 4** - Styling
+- **React Router 7** - Navigation
+- **LocalStorage** - Data persistence
+
+## 📁 Project Structure
+
 ```
+src/
+├── components/          # Reusable UI components
+│   ├── AnswerCard.tsx   # Individual answer display
+│   ├── GameBoard.tsx    # Main game board
+│   ├── ScoreBoard.tsx   # Team scores display
+│   └── StrikeDisplay.tsx # Strike indicators
+├── pages/               # Route pages
+│   ├── GamePage.tsx     # Main display page
+│   ├── HostPage.tsx     # Host controls
+│   └── AdminPage.tsx    # Question management
+├── hooks/               # Custom React hooks
+│   └── useGameState.ts  # Game state management
+├── types/               # TypeScript definitions
+│   └── index.ts
+├── utils/               # Utility functions
+│   └── sounds.ts        # Sound effect utilities
+├── App.tsx              # Main app component
+└── main.tsx             # Entry point
+```
+
+## 🎄 Sample Questions
+
+Check out `question_noel.json` for Christmas-themed sample questions!
+
+## 📄 License
+
+MIT License - feel free to use this for your own family game nights!
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues and pull requests.
+
+---
+
+Made with ❤️ for family fun nights!
