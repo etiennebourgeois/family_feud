@@ -1,0 +1,213 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "Nomme quelque chose qu’on met dans un sapin de Noël",
+      "answers": [
+        { "text": "Boules / décorations", "points": 40 },
+        { "text": "Étoile / ange", "points": 25 },
+        { "text": "Guirlandes lumineuses", "points": 20 },
+        { "text": "Tinsel / guirlande", "points": 10 },
+        { "text": "Bonbons / cannes de Noël", "points": 5 }
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Nomme un plat qu’on mange souvent à Noël",
+      "answers": [
+        { "text": "Dinde", "points": 35 },
+        { "text": "Tourtière", "points": 25 },
+        { "text": "Purée de pommes de terre", "points": 15 },
+        { "text": "Jambon", "points": 15 },
+        { "text": "Bûche de Noël", "points": 10 }
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Nomme un film de Noël populaire",
+      "answers": [
+        { "text": "Maman, j’ai raté l’avion !", "points": 30 },
+        { "text": "Le Grinch", "points": 25 },
+        { "text": "Le Père Noël est une ordure", "points": 20 },
+        { "text": "Elf", "points": 15 },
+        { "text": "Love Actually", "points": 10 }
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Nomme quelque chose que fait le Père Noël la veille de Noël",
+      "answers": [
+        { "text": "Distribue des cadeaux", "points": 40 },
+        { "text": "Mange des biscuits", "points": 25 },
+        { "text": "Voyage en traîneau", "points": 20 },
+        { "text": "Vérifie sa liste", "points": 10 },
+        { "text": "Dit « Ho Ho Ho ! »", "points": 5 }
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Nomme quelque chose qu’on met dans un bas de Noël",
+      "answers": [
+        { "text": "Chocolats / bonbons", "points": 30 },
+        { "text": "Petits jouets", "points": 25 },
+        { "text": "Bas / pyjamas", "points": 15 },
+        { "text": "Cartes-cadeaux", "points": 15 },
+        { "text": "Mandarine", "points": 15 }
+      ]
+    },
+    {
+      "id": "6",
+      "question": "Nomme une activité qu’on fait l’hiver",
+      "answers": [
+        { "text": "Faire du patin", "points": 30 },
+        { "text": "Faire un bonhomme de neige", "points": 25 },
+        { "text": "Faire du ski / de la luge", "points": 20 },
+        { "text": "Boire du chocolat chaud", "points": 15 },
+        { "text": "Regarder des films", "points": 10 }
+      ]
+    },
+    {
+      "id": "7",
+      "question": "Nomme quelque chose que les gens oublient souvent d’acheter avant Noël",
+      "answers": [
+        { "text": "Papier d’emballage", "points": 35 },
+        { "text": "Ruban adhésif", "points": 25 },
+        { "text": "Cartes de vœux / étiquettes", "points": 15 },
+        { "text": "Piles", "points": 15 },
+        { "text": "Cadeau de dernière minute", "points": 10 }
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Nomme une tâche qu’un lutin du Père Noël fait à l’atelier",
+      "answers": [
+        { "text": "Fabriquer des jouets", "points": 40 },
+        { "text": "Emballer les cadeaux", "points": 25 },
+        { "text": "Lire les lettres des enfants", "points": 15 },
+        { "text": "Vérifier la liste", "points": 10 },
+        { "text": "Tester les jouets", "points": 10 }
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Nomme quelque chose qu’on porte quand il fait très froid",
+      "answers": [
+        { "text": "Manteau", "points": 30 },
+        { "text": "Tuque", "points": 25 },
+        { "text": "Gants / mitaines", "points": 20 },
+        { "text": "Écharpe", "points": 15 },
+        { "text": "Bottes", "points": 10 }
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Nomme une friandise qu’on mange pendant le temps des fêtes",
+      "answers": [
+        { "text": "Canne de Noël", "points": 30 },
+        { "text": "Chocolat", "points": 25 },
+        { "text": "Sucre à la crème", "points": 20 },
+        { "text": "Biscuits décorés", "points": 15 },
+        { "text": "Fudge / caramel", "points": 10 }
+      ]
+    },
+    {
+      "id": "11",
+      "question": "Nomme une chanson de Noël qu’on entend partout",
+      "answers": [
+        { "text": "Vive le vent", "points": 30 },
+        { "text": "Petit papa Noël", "points": 25 },
+        { "text": "All I Want for Christmas Is You", "points": 20 },
+        { "text": "Douce nuit", "points": 15 },
+        { "text": "Feliz Navidad", "points": 10 }
+      ]
+    },
+    {
+      "id": "12",
+      "question": "Nomme une chose que les familles font le 24 décembre",
+      "answers": [
+        { "text": "Souper de Noël", "points": 35 },
+        { "text": "Ouvrir un cadeau", "points": 25 },
+        { "text": "Aller à la messe", "points": 15 },
+        { "text": "Regarder un film", "points": 15 },
+        { "text": "Mettre les bas de Noël", "points": 10 }
+      ]
+    },
+    {
+      "id": "13",
+      "question": "Nomme une décoration qu’on met dans la maison pour Noël",
+      "answers": [
+        { "text": "Sapin de Noël", "points": 35 },
+        { "text": "Guirlandes / lumières", "points": 25 },
+        { "text": "Couronne de porte", "points": 15 },
+        { "text": "Crèche", "points": 15 },
+        { "text": "Bougies", "points": 10 }
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Nomme quelque chose que le Père Noël apporte avec lui",
+      "answers": [
+        { "text": "Sac de cadeaux", "points": 40 },
+        { "text": "Ses rennes", "points": 25 },
+        { "text": "Son traîneau", "points": 20 },
+        { "text": "Sa liste", "points": 10 },
+        { "text": "Biscuits / lait", "points": 5 }
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Nomme une activité qu’on fait en famille pendant les fêtes",
+      "answers": [
+        { "text": "Jouer à des jeux de société", "points": 25 },
+        { "text": "Regarder un film", "points": 25 },
+        { "text": "Manger ensemble", "points": 20 },
+        { "text": "Cuisiner / faire des biscuits", "points": 15 },
+        { "text": "Chanter des chansons", "points": 15 }
+      ]
+    },
+    {
+      "id": "16",
+      "question": "Nomme une activité hivernale qu’on fait dehors",
+      "answers": [
+        { "text": "Glissade / luge", "points": 30 },
+        { "text": "Patin à glace", "points": 25 },
+        { "text": "Bataille de boules de neige", "points": 20 },
+        { "text": "Ski / planche à neige", "points": 15 },
+        { "text": "Promenade en traîneau", "points": 10 }
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Nomme un type de cadeau qu’on offre souvent à Noël",
+      "answers": [
+        { "text": "Vêtements / pyjamas", "points": 30 },
+        { "text": "Jouets", "points": 25 },
+        { "text": "Parfum / produits de beauté", "points": 20 },
+        { "text": "Cartes-cadeaux", "points": 15 },
+        { "text": "Livres", "points": 10 }
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Nomme une boisson typique du temps des fêtes",
+      "answers": [
+        { "text": "Chocolat chaud", "points": 30 },
+        { "text": "Lait de poule", "points": 25 },
+        { "text": "Vin chaud", "points": 20 },
+        { "text": "Cidre", "points": 15 },
+        { "text": "Punch / cocktail", "points": 10 }
+      ]
+    },
+    {
+      "id": "19",
+      "question": "Nomme quelque chose que les gens font à minuit le 31 décembre",
+      "answers": [
+        { "text": "Compter jusqu’à minuit", "points": 30 },
+        { "text": "S’embrasser / souhaiter bonne année", "points": 25 },
+        { "text": "Boire du champagne", "points": 20 },
+        { "text": "Regarder les feux d’artifice", "points": 15 },
+        { "text": "Faire une résolution", "points": 10 }
+      ]
+    }
+  ]
+}

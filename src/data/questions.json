@@ -1,0 +1,67 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "Nommez quelque chose que vous trouvez dans un réfrigérateur",
+      "answers": [
+        { "text": "Lait", "points": 35 },
+        { "text": "Œufs", "points": 25 },
+        { "text": "Beurre", "points": 15 },
+        { "text": "Fromage", "points": 10 },
+        { "text": "Légumes", "points": 8 },
+        { "text": "Fruits", "points": 5 },
+        { "text": "Viande", "points": 2 }
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Nommez un animal de compagnie populaire",
+      "answers": [
+        { "text": "Chien", "points": 40 },
+        { "text": "Chat", "points": 35 },
+        { "text": "Poisson", "points": 10 },
+        { "text": "Oiseau", "points": 8 },
+        { "text": "Hamster", "points": 5 },
+        { "text": "Lapin", "points": 2 }
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Nommez quelque chose que vous apportez à la plage",
+      "answers": [
+        { "text": "Serviette", "points": 30 },
+        { "text": "Crème solaire", "points": 25 },
+        { "text": "Parasol", "points": 15 },
+        { "text": "Maillot de bain", "points": 12 },
+        { "text": "Lunettes de soleil", "points": 10 },
+        { "text": "Glacière", "points": 5 },
+        { "text": "Ballon", "points": 3 }
+      ]
+    },
+    {
+      "id": "4",
+      "question": "Nommez une raison pour être en retard au travail",
+      "answers": [
+        { "text": "Embouteillage", "points": 35 },
+        { "text": "Réveil pas sonné", "points": 25 },
+        { "text": "Enfants", "points": 15 },
+        { "text": "Transport en commun", "points": 10 },
+        { "text": "Météo", "points": 8 },
+        { "text": "Maladie", "points": 5 },
+        { "text": "Panne de voiture", "points": 2 }
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Nommez un sport d'hiver",
+      "answers": [
+        { "text": "Ski", "points": 40 },
+        { "text": "Hockey", "points": 25 },
+        { "text": "Patinage", "points": 15 },
+        { "text": "Snowboard", "points": 10 },
+        { "text": "Luge", "points": 7 },
+        { "text": "Curling", "points": 3 }
+      ]
+    }
+  ]
+}
