@@ -2,31 +2,16 @@
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
-      "/assets/*",
+      "/assets/**",
       "*.css",
       "*.js",
       "*.png",
       "*.jpg",
       "*.svg",
       "*.ico",
-      "*.json"
+      "*.woff",
+      "*.woff2",
+      "*.ttf"
     ]
-  },
-  "routes": [
-    {
-      "route": "/host",
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/admin",
-      "rewrite": "/index.html"
-    },
-    {
-      "route": "/*",
-      "rewrite": "/index.html"
-    }
-  ],
-  "mimeTypes": {
-    ".json": "application/json"
   }
 }
