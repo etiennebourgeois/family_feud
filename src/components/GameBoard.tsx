@@ -21,6 +21,32 @@ export function GameBoard({ state }: GameBoardProps) {
   const leftColumn = paddedAnswers.slice(0, 3);
   const rightColumn = paddedAnswers.slice(3, 5);
 
+  // Intro screen - show only scoreboard without question
+  if (state.gamePhase === "intro") {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-[#1e3a5f] to-[#0f1f33] p-4 md:p-8 flex flex-col items-center justify-center">
+        {/* Header / Logo */}
+        <div className="text-center mb-12">
+          <h1
+            className="text-6xl md:text-8xl font-bold text-yellow-400 drop-shadow-lg"
+            style={{ fontFamily: "Bebas Neue, sans-serif" }}
+          >
+            La Guerre des clans
+          </h1>
+        </div>
+
+        {/* Score Board */}
+        <div className="w-full max-w-4xl">
+          <ScoreBoard
+            teams={state.teams}
+            activeTeam={state.activeTeam}
+            roundScore={state.roundScore}
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1e3a5f] to-[#0f1f33] p-4 md:p-8 flex flex-col">
       {/* Header / Logo */}
@@ -29,7 +55,7 @@ export function GameBoard({ state }: GameBoardProps) {
           className="text-4xl md:text-6xl font-bold text-yellow-400 drop-shadow-lg"
           style={{ fontFamily: "Bebas Neue, sans-serif" }}
         >
-          Une Famille en Or
+          La Guerre des clans
         </h1>
       </div>
 

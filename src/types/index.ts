@@ -22,7 +22,7 @@ export interface GameState {
   strikes: number;
   roundScore: number;
   activeTeam: 0 | 1;
-  gamePhase: "idle" | "playing" | "faceoff" | "steal" | "roundEnd";
+  gamePhase: "intro" | "idle" | "playing" | "faceoff" | "steal" | "roundEnd";
 }
 
 export type GameAction =

@@ -84,13 +84,16 @@ export function HostPage() {
         <div className="bg-blue-800 rounded-lg p-4 mb-6">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm text-blue-300">
-              Question {state.currentQuestionIndex + 1} /{" "}
-              {state.questions.length}
+              {state.gamePhase === "intro"
+                ? "Écran d'introduction"
+                : `Question ${state.currentQuestionIndex + 1} / ${
+                    state.questions.length
+                  }`}
             </span>
             <div className="flex gap-2">
               <button
                 onClick={() => dispatch({ type: "PREVIOUS_QUESTION" })}
-                disabled={state.currentQuestionIndex === 0}
+                disabled={state.currentQuestionIndex <= 0}
                 className="bg-gray-600 hover:bg-gray-700 disabled:opacity-50 px-3 py-1 rounded"
               >
                 ← Précédent
@@ -100,13 +103,17 @@ export function HostPage() {
                 disabled={
                   state.currentQuestionIndex === state.questions.length - 1
                 }
-                className="bg-gray-600 hover:bg-gray-700 disabled:opacity-50 px-3 py-1 rounded"
+                className="bg-green-600 hover:bg-green-700 disabled:opacity-50 px-3 py-1 rounded"
               >
-                Suivant →
+                {state.gamePhase === "intro" ? "Commencer →" : "Suivant →"}
               </button>
             </div>
           </div>
-          <p className="text-xl font-bold">{currentQuestion?.question}</p>
+          <p className="text-xl font-bold">
+            {state.gamePhase === "intro"
+              ? "Cliquez sur 'Commencer' pour afficher la première question"
+              : currentQuestion?.question}
+          </p>
         </div>
 
         {/* Teams */}

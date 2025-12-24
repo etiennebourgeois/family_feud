@@ -19,7 +19,7 @@ const getInitialQuestions = (): Question[] => {
 
 const createInitialState = (questions: Question[]): GameState => ({
   questions,
-  currentQuestionIndex: 0,
+  currentQuestionIndex: -1,
   revealedAnswers: new Array(5).fill(false),
   teams: [
     { name: "Équipe 1", score: 0 },
@@ -28,7 +28,7 @@ const createInitialState = (questions: Question[]): GameState => ({
   strikes: 0,
   roundScore: 0,
   activeTeam: 0,
-  gamePhase: "idle",
+  gamePhase: "intro",
 });
 
 const getInitialState = (): GameState => {
